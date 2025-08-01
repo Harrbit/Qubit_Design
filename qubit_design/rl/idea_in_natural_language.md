@@ -1,0 +1,2 @@
+1. The design and optimization of transmon geometry is essentially a n-to-m mapping, where the relation of the input and output spaces is defined by complicated phenomenone. Which is hard to express as equations. Machine Learning is a better automation solution for such problem.
+2. The problem with implementing ML in transmon design is that the process of simulation, which is, to some extent, the process of getting a reward value for the cost function. Therefore it is not realistic to obtain a giant data set by ourselves.
