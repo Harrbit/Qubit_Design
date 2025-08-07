@@ -36,3 +36,47 @@ Project directory: D:\ansys_file
         [info] Aedt Objects correctly read
 -- Message Window --
 Stopping Batch Run: 1:16:39 PM  Aug 01, 2025
+ 
+Ansys Electronics Desktop Student Version 2025.2.0, Build: 2025-05-16 12:03:40
+Location: D:\ansys\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 1:37:20 PM  Aug 01, 2025
+Running as user : RZPC\24716
+Temp directory: D:\ansys_temp_file
+Project directory: D:\ansys_file
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 13418. 
+        [info] Project Project2 has been created.
+        [info] No design is present. Inserting a new design.
+        [info] Added design 'HFSS_P73' of type HFSS.
+        [info] Aedt Objects correctly read
+        [info] Modeler class has been initialized! Elapsed time: 0m 0sec
+        [info] Materials class has been initialized! Elapsed time: 0m 0sec
+        [error] **************************************************************
+        [error]   File "c:\Users\24716\.conda\envs\qd\lib\runpy.py", line 197, in _run_module_as_main
+        [error]     return _run_code(code, main_globals, None,
+        [error]   File "c:\Users\24716\.conda\envs\qd\lib\runpy.py", line 87, in _run_code
+        [error]     exec(code, run_globals)
+        [error]   File "c:\Users\24716\.conda\envs\qd\lib\asyncio\base_events.py", line 601, in run_forever
+        [error]     self._run_once()
+        [error]   File "c:\Users\24716\.conda\envs\qd\lib\asyncio\base_events.py", line 1905, in _run_once
+        [error]     handle._run()
+        [error]   File "c:\Users\24716\.conda\envs\qd\lib\asyncio\events.py", line 80, in _run
+        [error]     self._context.run(self._callback, *self._args)
+        [error]   File "C:\Users\24716\AppData\Local\Temp\ipykernel_7408\791109598.py", line 9, in <module>
+        [error]     box = hfss.modeler.create_box(origin=[0, 0, 0],
+        [error] AEDT API Error on create_box
+        [error] Last Electronics Desktop Message - [error] script macro error: while parsing expression: "dim", an error was found near character 2. 'dim' is not a defined variable name in this context. cannot create a box with a 0 xsize or ysize. only zsize can be 
+        [error] 0.  (01:37:35 pm  aug 01, 2025)  
+        [error] Method arguments: 
+        [error]     origin = [0, 0, 0] 
+        [error]     sizes = [10, 'dim', 10] 
+        [error]     name = mybox 
+        [error]     material = aluminum 
+        [error] **************************************************************
+        [error] 'bool' object has no attribute 'faces'
+        [error]   File "C:\Users\24716\AppData\Local\Temp\ipykernel_7408\791109598.py", line 13, in <module>
+        [error]     print(box.faces)
+-- Message Window --
+Stopping Batch Run: 1:37:56 PM  Aug 01, 2025
