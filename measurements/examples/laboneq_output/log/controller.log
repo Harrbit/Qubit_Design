@@ -4,3 +4,9 @@
 2025.08.15 15:27:32.343 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
 2025.08.15 15:27:32.349 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
 2025.08.15 15:27:32.354 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.18 11:43:09.300 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\examples\laboneq_output\log
+2025.08.18 11:43:09.303 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.18 11:43:09.305 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 11:43:09.310 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 11:43:09.314 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 11:43:09.314 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
