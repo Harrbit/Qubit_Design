@@ -56,4 +56,31 @@
 2025.08.18 14:34:50.828 | laboneq.controller.controller                 | INFO   Starting near-time execution...
 2025.08.18 14:34:50.831 | laboneq.controller.controller                 | INFO   Estimated RT execution time: 12.49 s.
 2025.08.18 14:34:50.832 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+<<<<<<< HEAD
 >>>>>>> origin/RZMac
+=======
+2025.08.18 15:55:45.072 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /Users/runzhaoguo/Documents/MQST-UCLA/qubit_design/measurements/examples/laboneq_output/log
+2025.08.18 15:55:45.073 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.18 15:55:45.073 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 15:55:45.074 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 15:55:45.075 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 15:55:45.076 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.18 22:41:00.105 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /Users/runzhaoguo/Documents/MQST-UCLA/qubit_design/measurements/examples/laboneq_output/log
+2025.08.18 22:41:00.108 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.18 22:41:00.109 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 22:41:00.109 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 22:41:00.110 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 22:41:00.111 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.18 22:41:30.072 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /Users/runzhaoguo/Documents/MQST-UCLA/qubit_design/measurements/examples/laboneq_output/log
+2025.08.18 22:41:30.074 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.18 22:41:30.075 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 22:41:30.076 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 22:41:30.078 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 22:41:30.079 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.18 22:48:29.717 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /Users/runzhaoguo/Documents/MQST-UCLA/qubit_design/measurements/examples/laboneq_output/log
+2025.08.18 22:48:29.719 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.18 22:48:29.719 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 22:48:29.720 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 22:48:29.722 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 22:48:29.723 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+>>>>>>> RZMac
