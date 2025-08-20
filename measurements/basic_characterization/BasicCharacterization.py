@@ -9,43 +9,6 @@ import numpy as np
 import laboneq
 
 class PunchOut:
-    """PunchOut is a class designed for basic characterization experiments in qubit design,
-    specifically for performing resonator spectroscopy using Zurich Instruments LabOne Q framework.
-    The class encapsulates experiment setup, calibration, and execution, providing a streamlined
-    interface for running frequency sweep measurements and acquiring data.
-    Attributes:
-        readout_pulse: Pulse object for readout.
-        acq_lo_freq: Local oscillator frequency for acquisition.
-        acq_res_freq: Resonator frequency for acquisition.
-        acq_freq_sweep: LinearSweepParameter for frequency sweep.
-        device_setup: DeviceSetup object for instrument configuration.
-        emulate: Boolean indicating emulation mode.
-        session: Session object for experiment execution.
-        map_q0: Dictionary mapping logical signals for qubit 0.
-    Methods:
-        __init__():
-            Initializes the PunchOut class, sets up experiment parameters, device configuration,
-            and logical signal mapping.
-        setup_experiment(exp_id='punch_out', average_exponent=5, acq_freq_sweep=..., acq_amp_sweep=..., integration_length=1e-6):
-            Sets up the spectroscopy experiment.
-            Args:
-                exp_id (str): Unique identifier for the experiment.
-                average_exponent (int): Exponent for averaging (number of shots = 2^average_exponent).
-                acq_freq_sweep (LinearSweepParameter): Frequency sweep parameter for acquisition.
-                acq_amp_sweep (LinearSweepParameter): Amplitude sweep parameter for acquisition.
-                integration_length (float): Integration time for acquisition.
-            Returns:
-                Experiment: Configured Experiment object.
-        calibrate_experiment():
-            Sets up calibration for the experiment signals.
-            Returns:
-                Calibration: Calibration object with signal calibrations.
-        run_experiment():
-            Compiles, runs the experiment, and retrieves the acquired data.
-            Returns:
-                data_exp: Experimental data acquired from the run."""
-
-
     def __init__ (self):
         print(laboneq.__version__)
 
