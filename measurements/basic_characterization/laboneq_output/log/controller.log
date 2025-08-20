@@ -7589,3 +7589,21 @@
 2025.08.19 22:20:53.193 | laboneq.controller.controller                 | INFO   Starting near-time execution...
 2025.08.19 22:20:53.440 | laboneq.controller.controller                 | INFO   Finished near-time execution.
 >>>>>>> origin/RZMac
+2025.08.20 13:05:51.183 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 13:05:51.186 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 13:05:51.189 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 13:05:51.191 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 13:05:51.199 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 13:05:51.201 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 13:06:53.063 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 13:06:53.063 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 13:06:53.063 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 13:06:53.063 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 13:06:53.074 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 13:06:53.076 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 13:07:07.021 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 13:07:07.023 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 13:07:07.025 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 13:07:07.028 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 13:07:07.028 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 13:07:07.028 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
