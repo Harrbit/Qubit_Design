@@ -15,7 +15,7 @@ class PunchOut:
         self.integration_length = 1e-6
         self.acq_lo_freq = 7e9
         self.acq_res_freq = 7.10e9
-        self.acq_freq_sweep_cnt = 501
+        self.acq_freq_sweep_cnt = 201
         self.acq_freq_sweep_start = (self.acq_res_freq - 100e6) - self.acq_lo_freq
         self.acq_freq_sweep_stop = (self.acq_res_freq + 100e6) - self.acq_lo_freq
         
@@ -23,6 +23,10 @@ class PunchOut:
                                                       start=self.acq_freq_sweep_start, 
                                                       stop=self.acq_freq_sweep_stop, 
                                                       count=self.acq_freq_sweep_cnt,)
+        self.acq_amp_sweep = LinearSweepParameter(uid='acquisition_amplitude_sweep',
+                                                  start=0.1,
+                                                  stop=0.7,
+                                                  count=11)
         #-------------------------Experiment-specific setup ends here--------------------------#
         
         #-------------------------below is some universal setting------------------------------#
@@ -58,17 +62,18 @@ class PunchOut:
         #-----------------------------Below is the SIGNAL MAP------------------------------------#
         self.map_q0 = {}
         self.map_q0['measure'] = self.device_setup.logical_signal_groups['q0'].logical_signals['measure_line']
+        self.map_q0['measure_1'] = self.device_setup.logical_signal_groups['q0'].logical_signals['measure_line']
         self.map_q0['acquire'] = self.device_setup.logical_signal_groups['q0'].logical_signals['acquire_line']
         #-----------------------------SIGNAL MAP ends here---------------------------------------#
 
         #-----------------------------Below is the pulse setup-----------------------------------#
-        self.readout_pulse = pulse_library.const(uid="readout_pulse", amplitude=0.15, length=self.integration_length)
+        self.readout_pulse = pulse_library.const(uid="readout_pulse", length=self.integration_length)
         #-----------------------------Pulse setup ends here--------------------------------------#
 
     def setup_experiment(self, 
                          exp_id='punch_out',
-                         average_exponent = 5,
-                         acq_freq_sweep = LinearSweepParameter(uid='acq_freq_sweep_default', 
+                         average_exponent = 2,
+                         acq_freq_sweep = LinearSweepParameter(uid='acq_freq_sweep_default',
                                                                  start=-100e6,
                                                                  stop=100e6,
                                                                  count=2001),
@@ -81,22 +86,19 @@ class PunchOut:
             uid = exp_id,
             signals = [
                 ExperimentSignal("measure"),
+                ExperimentSignal("measure_1"),
                 ExperimentSignal("acquire"),
             ],
         )
-
         with exp.acquire_loop_rt(
             uid='freq_shots',
-            count=pow(2, average_exponent),
+            count=pow(10, average_exponent),
             acquisition_type=AcquisitionType.SPECTROSCOPY,
         ):
             with exp.sweep(uid='acq_freq_sweep', parameter=acq_freq_sweep):
                 with exp.section(uid="spectroscopy"):
-                    exp.play(signal='measure', pulse=self.readout_pulse,)
+                    exp.play(signal='measure', pulse=self.readout_pulse)
                     exp.acquire(signal='acquire', handle='res_spec', length=self.integration_length),  # incase people are wondering, yes, 'res_spec' stand for 'resonator spectroscopy'.
-                # with exp.section(uid='relax'):
-                #     exp.delay(signal='measure', time=self.integration_length)
-                #     exp.reserve(signal='acquire')
         return exp
     
 
@@ -111,6 +113,15 @@ class PunchOut:
             range=-30,
             amplitude=0.1,
         )
+        exp_calibration["measure_1"] = SignalCalibration(
+            oscillator = Oscillator(uid = "qa_osc_1",  # let's just say here 'qa' stands for quantum analyzer
+                                    frequency = self.acq_freq_sweep,
+                                    modulation_type=ModulationType.HARDWARE),
+            local_oscillator = Oscillator(uid="qa_lo_1",
+                                          frequency=self.acq_lo_freq),
+            range=-30,
+            amplitude=0.7,
+        )
         exp_calibration["acquire"] = SignalCalibration(
             range = -40,
             amplitude = 1.0,
@@ -120,8 +131,9 @@ class PunchOut:
 
     def run_experiment(self):
         self.exp_instance = self.setup_experiment(exp_id='punch_out',
-                                                  average_exponent=12,
-                                                  acq_freq_sweep=self.acq_freq_sweep,)
+                                                  average_exponent=2,
+                                                  acq_freq_sweep=self.acq_freq_sweep,
+                                                  acq_amp_sweep=self.acq_amp_sweep,)
         self.exp_instance.set_signal_map(self.map_q0)
         self.exp_calibration = self.calibrate_experiment()
         self.exp_instance.set_calibration(self.exp_calibration)
