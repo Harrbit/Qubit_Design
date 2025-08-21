@@ -1,3 +1,575 @@
+<<<<<<< HEAD
+2025.08.18 15:51:17.812 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /Users/runzhaoguo/Documents/MQST-UCLA/qubit_design/measurements/basic_characterization/laboneq_output/log
+2025.08.18 15:51:17.813 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.18 15:51:17.814 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 15:51:17.814 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 15:51:17.815 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 15:51:17.816 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.18 16:07:09.467 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /Users/runzhaoguo/Documents/MQST-UCLA/qubit_design/measurements/basic_characterization/laboneq_output/log
+2025.08.18 16:07:09.469 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.18 16:07:09.469 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 16:07:09.470 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 16:07:09.471 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 16:07:09.473 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.18 16:07:09.510 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.18 16:07:09.555 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.034 s]
+2025.08.18 16:07:09.639 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.084 s]
+2025.08.18 16:07:09.639 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.118 s]
+2025.08.18 16:07:09.640 | laboneq.compiler.workflow.reporter            | INFO    ───────────────────────────────────────────────────────────────────── 
+2025.08.18 16:07:09.641 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice         [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.18 16:07:09.641 | laboneq.compiler.workflow.reporter            | INFO    ───────────────────────────────────────────────────────────────────── 
+2025.08.18 16:07:09.641 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc        0         21            0           1     20000  
+2025.08.18 16:07:09.641 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc_sg     2         17            3           2     24000  
+2025.08.18 16:07:09.641 | laboneq.compiler.workflow.reporter            | INFO    ───────────────────────────────────────────────────────────────────── 
+2025.08.18 16:07:09.642 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL          [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      38[0m[1m [0m [1m [0m[1m         3[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  44000[0m[1m [0m 
+2025.08.18 16:07:09.642 | laboneq.compiler.workflow.reporter            | INFO    ───────────────────────────────────────────────────────────────────── 
+2025.08.18 16:07:09.651 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.18 16:09:10.521 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.18 16:09:10.552 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.029 s]
+2025.08.18 16:09:10.593 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.041 s]
+2025.08.18 16:09:10.593 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.071 s]
+2025.08.18 16:09:10.595 | laboneq.compiler.workflow.reporter            | INFO    ───────────────────────────────────────────────────────────────────── 
+2025.08.18 16:09:10.595 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice         [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.18 16:09:10.595 | laboneq.compiler.workflow.reporter            | INFO    ───────────────────────────────────────────────────────────────────── 
+2025.08.18 16:09:10.595 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc        0         21            0           1     16000  
+2025.08.18 16:09:10.595 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc_sg     2         17            3           2     20000  
+2025.08.18 16:09:10.596 | laboneq.compiler.workflow.reporter            | INFO    ───────────────────────────────────────────────────────────────────── 
+2025.08.18 16:09:10.596 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL          [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      38[0m[1m [0m [1m [0m[1m         3[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  36000[0m[1m [0m 
+2025.08.18 16:09:10.596 | laboneq.compiler.workflow.reporter            | INFO    ───────────────────────────────────────────────────────────────────── 
+2025.08.18 16:09:10.599 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.18 16:09:30.277 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.18 16:09:30.393 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.114 s]
+2025.08.18 16:09:30.435 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.042 s]
+2025.08.18 16:09:30.435 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.156 s]
+2025.08.18 16:09:30.436 | laboneq.compiler.workflow.reporter            | INFO    ───────────────────────────────────────────────────────────────────── 
+2025.08.18 16:09:30.437 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice         [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.18 16:09:30.437 | laboneq.compiler.workflow.reporter            | INFO    ───────────────────────────────────────────────────────────────────── 
+2025.08.18 16:09:30.437 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc        0         21            0           1     16000  
+2025.08.18 16:09:30.437 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc_sg     2         18            3           2     20000  
+2025.08.18 16:09:30.438 | laboneq.compiler.workflow.reporter            | INFO    ───────────────────────────────────────────────────────────────────── 
+2025.08.18 16:09:30.438 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL          [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      39[0m[1m [0m [1m [0m[1m         3[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  36000[0m[1m [0m 
+2025.08.18 16:09:30.438 | laboneq.compiler.workflow.reporter            | INFO    ───────────────────────────────────────────────────────────────────── 
+2025.08.18 16:09:30.441 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.18 17:48:07.299 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /Users/runzhaoguo/Documents/MQST-UCLA/qubit_design/measurements/basic_characterization/laboneq_output/log
+2025.08.18 17:48:07.301 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.18 17:48:07.301 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 17:48:07.302 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 17:48:07.303 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 17:48:07.304 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.18 17:48:07.347 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.18 17:48:35.388 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /Users/runzhaoguo/Documents/MQST-UCLA/qubit_design/measurements/basic_characterization/laboneq_output/log
+2025.08.18 17:48:35.392 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.18 17:48:35.394 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 17:48:35.398 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 17:48:35.404 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 17:48:35.408 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.18 17:48:35.436 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.18 17:48:46.734 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /Users/runzhaoguo/Documents/MQST-UCLA/qubit_design/measurements/basic_characterization/laboneq_output/log
+2025.08.18 17:48:46.735 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.18 17:48:46.736 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 17:48:46.737 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 17:48:46.738 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 17:48:46.739 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.18 17:49:00.359 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /Users/runzhaoguo/Documents/MQST-UCLA/qubit_design/measurements/basic_characterization/laboneq_output/log
+2025.08.18 17:49:00.362 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.18 17:49:00.363 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 17:49:00.364 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 17:49:00.366 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 17:49:00.367 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.18 17:49:29.519 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.18 17:49:29.550 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.029 s]
+2025.08.18 17:49:29.581 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.031 s]
+2025.08.18 17:49:29.582 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.060 s]
+2025.08.18 17:49:29.583 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.18 17:49:29.583 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.18 17:49:29.583 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.18 17:49:29.584 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1     16000  
+2025.08.18 17:49:29.584 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.18 17:49:29.584 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  16000[0m[1m [0m 
+2025.08.18 17:49:29.584 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.18 17:49:29.596 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.18 17:50:37.479 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /Users/runzhaoguo/Documents/MQST-UCLA/qubit_design/measurements/basic_characterization/laboneq_output/log
+2025.08.18 17:50:37.481 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.18 17:50:37.481 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 17:50:37.482 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 17:50:37.484 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 17:50:37.485 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.18 17:50:37.527 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.18 17:50:37.549 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.020 s]
+2025.08.18 17:50:37.574 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.024 s]
+2025.08.18 17:50:37.574 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.045 s]
+2025.08.18 17:50:37.575 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.18 17:50:37.576 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.18 17:50:37.576 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.18 17:50:37.576 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1     20000  
+2025.08.18 17:50:37.577 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.18 17:50:37.577 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  20000[0m[1m [0m 
+2025.08.18 17:50:37.577 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.18 17:50:37.580 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.18 17:51:21.838 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 17:51:21.840 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 17:51:21.842 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 17:51:21.845 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.18 17:51:21.853 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.18 17:51:21.858 | laboneq.controller.controller                 | INFO   Estimated RT execution time: 10.44 s.
+2025.08.18 17:51:21.860 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.18 18:05:16.796 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 18:05:16.798 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 18:05:16.800 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 18:05:16.803 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.18 18:05:16.809 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.18 18:05:16.813 | laboneq.controller.controller                 | INFO   Estimated RT execution time: 10.44 s.
+2025.08.18 18:05:16.815 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.18 22:39:56.028 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /Users/runzhaoguo/Documents/MQST-UCLA/qubit_design/measurements/basic_characterization/laboneq_output/log
+2025.08.18 22:39:56.030 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.18 22:39:56.030 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 22:39:56.031 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 22:39:56.032 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 22:39:56.033 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.18 22:40:28.561 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /Users/runzhaoguo/Documents/MQST-UCLA/qubit_design/measurements/basic_characterization/laboneq_output/log
+2025.08.18 22:40:28.563 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.18 22:40:28.563 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 22:40:28.565 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 22:40:28.567 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 22:40:28.568 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.18 22:51:47.633 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /Users/runzhaoguo/Documents/MQST-UCLA/qubit_design/measurements/basic_characterization/laboneq_output/log
+2025.08.18 22:51:47.637 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.18 22:51:47.637 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 22:51:47.639 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 22:51:47.640 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 22:51:47.642 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.18 22:51:59.537 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /Users/runzhaoguo/Documents/MQST-UCLA/qubit_design/measurements/basic_characterization/laboneq_output/log
+2025.08.18 22:51:59.540 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.18 22:51:59.541 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.18 22:51:59.543 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.18 22:51:59.550 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.18 22:51:59.554 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 14:44:57.327 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 14:44:57.346 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 14:44:57.348 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 14:44:57.352 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 14:44:57.355 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 14:44:57.355 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 14:44:57.422 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 14:44:57.530 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.111 s]
+2025.08.19 14:44:57.765 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.230 s]
+2025.08.19 14:44:57.765 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 2. [0.345 s]
+2025.08.19 14:44:57.765 | laboneq.compiler.workflow.neartime_execution  | INFO   Skipping compilation for next step(s)...
+2025.08.19 14:44:57.777 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:44:57.777 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.19 14:44:57.777 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:44:57.778 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         27            0           1     20000  
+2025.08.19 14:44:57.779 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:44:57.779 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      27[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  20000[0m[1m [0m 
+2025.08.19 14:44:57.780 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:44:57.837 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.19 14:44:58.396 | laboneq.controller.devices.device_shfqa       | WARNING SHFQC/QA:dev12296: Output channel 0 range -40.0 is not on the list of allowed ranges: [-30. -25. -20. -15. -10.  -5.   0.   5.  10.]. Nearest allowed range will be used.
+2025.08.19 14:44:58.412 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.19 14:44:58.412 | laboneq.controller.controller                 | INFO   Estimated RT execution time: 30.96 s.
+2025.08.19 14:44:58.412 | laboneq.controller.controller                 | INFO   Estimated RT execution time: 30.96 s.
+2025.08.19 14:44:58.412 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.19 14:54:48.894 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 14:54:48.900 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 14:54:48.901 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 14:54:48.903 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 14:54:48.903 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 14:54:48.903 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 14:54:48.960 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 14:54:49.133 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.171 s]
+2025.08.19 14:54:49.209 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.074 s]
+2025.08.19 14:54:49.210 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 2. [0.247 s]
+2025.08.19 14:54:49.211 | laboneq.compiler.workflow.neartime_execution  | INFO   Skipping compilation for next step(s)...
+2025.08.19 14:54:49.214 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:54:49.215 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.19 14:54:49.216 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:54:49.217 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1     20000  
+2025.08.19 14:54:49.217 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:54:49.217 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  20000[0m[1m [0m 
+2025.08.19 14:54:49.217 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:54:49.217 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.19 14:54:49.371 | laboneq.controller.devices.device_shfqa       | WARNING SHFQC/QA:dev12296: Output channel 0 range -40.0 is not on the list of allowed ranges: [-30. -25. -20. -15. -10.  -5.   0.   5.  10.]. Nearest allowed range will be used.
+2025.08.19 14:54:49.379 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.19 14:54:49.383 | laboneq.controller.controller                 | INFO   Estimated RT execution time: 10.44 s.
+2025.08.19 14:54:49.387 | laboneq.controller.controller                 | INFO   Estimated RT execution time: 10.44 s.
+2025.08.19 14:54:49.387 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.19 14:55:53.214 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 14:55:53.214 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 14:55:53.214 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 14:55:53.214 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 14:55:53.214 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 14:55:53.214 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 14:56:58.095 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 14:56:58.098 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 14:56:58.099 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 14:56:58.102 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 14:56:58.102 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 14:56:58.102 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 14:56:58.155 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 14:56:58.212 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.058 s]
+2025.08.19 14:56:58.288 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.071 s]
+2025.08.19 14:56:58.289 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 2. [0.131 s]
+2025.08.19 14:56:58.289 | laboneq.compiler.workflow.neartime_execution  | INFO   Skipping compilation for next step(s)...
+2025.08.19 14:56:58.293 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:56:58.294 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.19 14:56:58.295 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:56:58.295 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1     20000  
+2025.08.19 14:56:58.296 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:56:58.296 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  20000[0m[1m [0m 
+2025.08.19 14:56:58.297 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:57:32.035 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 14:57:32.035 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 14:57:32.035 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 14:57:32.047 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 14:57:32.047 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 14:57:32.047 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 14:57:32.106 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 14:57:32.171 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.061 s]
+2025.08.19 14:57:32.246 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.074 s]
+2025.08.19 14:57:32.248 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 2. [0.137 s]
+2025.08.19 14:57:32.248 | laboneq.compiler.workflow.neartime_execution  | INFO   Skipping compilation for next step(s)...
+2025.08.19 14:57:32.248 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:57:32.248 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.19 14:57:32.248 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:57:32.248 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1     20000  
+2025.08.19 14:57:32.248 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:57:32.248 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  20000[0m[1m [0m 
+2025.08.19 14:57:32.248 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:59:44.030 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 14:59:44.032 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 14:59:44.032 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 14:59:44.032 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 14:59:44.032 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 14:59:44.043 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 14:59:44.095 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 14:59:44.157 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.060 s]
+2025.08.19 14:59:44.229 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.070 s]
+2025.08.19 14:59:44.229 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 2. [0.133 s]
+2025.08.19 14:59:44.230 | laboneq.compiler.workflow.neartime_execution  | INFO   Skipping compilation for next step(s)...
+2025.08.19 14:59:44.233 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:59:44.234 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.19 14:59:44.235 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:59:44.236 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1     20000  
+2025.08.19 14:59:44.236 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 14:59:44.237 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  20000[0m[1m [0m 
+2025.08.19 14:59:44.238 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:06:26.984 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:06:26.986 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:06:26.986 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:06:26.986 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:06:26.996 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:06:26.996 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:06:27.049 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:06:27.096 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.059 s]
+2025.08.19 15:06:27.339 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.234 s]
+2025.08.19 15:06:27.345 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 2. [0.294 s]
+2025.08.19 15:06:27.347 | laboneq.compiler.workflow.neartime_execution  | INFO   Skipping compilation for next step(s)...
+2025.08.19 15:06:27.349 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:06:27.349 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.19 15:06:27.349 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:06:27.349 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1     20000  
+2025.08.19 15:06:27.349 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:06:27.349 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  20000[0m[1m [0m 
+2025.08.19 15:06:27.349 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:06:27.362 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.19 15:06:27.498 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.19 15:06:27.513 | laboneq.controller.controller                 | INFO   Estimated RT execution time: 10.44 s.
+2025.08.19 15:06:27.513 | laboneq.controller.controller                 | INFO   Estimated RT execution time: 10.44 s.
+2025.08.19 15:06:27.513 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.19 15:06:50.620 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:06:50.623 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:06:50.624 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:06:50.625 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:06:50.625 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:06:50.625 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:06:50.698 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:06:50.752 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.062 s]
+2025.08.19 15:06:50.854 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.090 s]
+2025.08.19 15:06:50.854 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 2. [0.153 s]
+2025.08.19 15:06:50.856 | laboneq.compiler.workflow.neartime_execution  | INFO   Skipping compilation for next step(s)...
+2025.08.19 15:06:50.856 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:06:50.856 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.19 15:06:50.856 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:06:50.856 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1     20000  
+2025.08.19 15:06:50.856 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:06:50.856 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  20000[0m[1m [0m 
+2025.08.19 15:06:50.856 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:06:50.870 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.19 15:06:51.037 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.19 15:06:51.047 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.19 15:08:07.061 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:08:07.064 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:08:07.065 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:08:07.067 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:08:07.069 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:08:07.069 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:08:07.118 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:08:07.247 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.124 s]
+2025.08.19 15:08:07.325 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.077 s]
+2025.08.19 15:08:07.325 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 3. [0.203 s]
+2025.08.19 15:08:07.326 | laboneq.compiler.workflow.neartime_execution  | INFO   Skipping compilation for next step(s)...
+2025.08.19 15:08:07.330 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:08:07.331 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.19 15:08:07.332 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:08:07.333 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1     20000  
+2025.08.19 15:08:07.333 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:08:07.335 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  20000[0m[1m [0m 
+2025.08.19 15:08:07.335 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:08:07.337 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.19 15:08:12.144 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.19 15:08:12.155 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.19 15:09:49.418 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:09:49.418 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:09:49.418 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:09:49.432 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:09:49.433 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:09:49.433 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:09:49.488 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:09:49.550 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.060 s]
+2025.08.19 15:09:49.618 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.074 s]
+2025.08.19 15:09:49.618 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 2. [0.136 s]
+2025.08.19 15:09:49.618 | laboneq.compiler.workflow.neartime_execution  | INFO   Skipping compilation for next step(s)...
+2025.08.19 15:09:49.630 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:09:49.632 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.19 15:09:49.632 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:09:49.633 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1     20000  
+2025.08.19 15:09:49.633 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:09:49.633 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  20000[0m[1m [0m 
+2025.08.19 15:09:49.633 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:09:49.633 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.19 15:09:49.910 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.19 15:09:49.915 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.19 15:12:13.262 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:12:13.268 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:12:13.270 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:12:13.273 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:12:13.277 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:12:13.281 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:12:13.334 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:12:37.031 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:12:37.034 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:12:37.035 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:12:37.035 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:12:37.035 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:12:37.035 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:12:37.090 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:12:37.155 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.063 s]
+2025.08.19 15:12:37.233 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.077 s]
+2025.08.19 15:12:37.233 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 2. [0.141 s]
+2025.08.19 15:12:37.233 | laboneq.compiler.workflow.neartime_execution  | INFO   Skipping compilation for next step(s)...
+2025.08.19 15:12:37.233 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:12:37.233 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.19 15:12:37.233 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:12:37.233 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1     20000  
+2025.08.19 15:12:37.233 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:12:37.233 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  20000[0m[1m [0m 
+2025.08.19 15:12:37.233 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:12:37.249 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.19 15:12:37.393 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.19 15:12:37.401 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.19 15:14:30.079 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:14:30.096 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:14:30.098 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:14:30.098 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:14:30.114 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:14:30.120 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:14:30.195 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:15:42.018 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:15:42.033 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:15:42.034 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:15:42.035 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:15:42.035 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:15:42.035 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:15:42.091 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:16:20.290 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:16:20.290 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:16:20.290 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:16:20.302 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:16:20.305 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:16:20.306 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:16:20.356 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:16:52.572 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:16:52.584 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:16:52.585 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:16:52.587 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:16:52.591 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:16:52.591 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:16:52.640 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:16:52.721 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.069 s]
+2025.08.19 15:16:52.939 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.225 s]
+2025.08.19 15:16:52.939 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 2. [0.297 s]
+2025.08.19 15:16:52.939 | laboneq.compiler.workflow.neartime_execution  | INFO   Skipping compilation for next step(s)...
+2025.08.19 15:16:52.963 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:16:52.964 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.19 15:16:52.965 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:16:52.966 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1     20000  
+2025.08.19 15:16:52.967 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:16:52.968 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  20000[0m[1m [0m 
+2025.08.19 15:16:52.968 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:16:52.969 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.19 15:16:53.210 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.19 15:16:53.219 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.19 15:17:00.935 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:17:00.935 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:17:00.935 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:17:00.935 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:17:00.945 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:17:00.945 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:17:00.999 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:17:01.062 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.066 s]
+2025.08.19 15:17:01.145 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.082 s]
+2025.08.19 15:17:01.152 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 2. [0.151 s]
+2025.08.19 15:17:01.152 | laboneq.compiler.workflow.neartime_execution  | INFO   Skipping compilation for next step(s)...
+2025.08.19 15:17:01.153 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:17:01.153 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.19 15:17:01.153 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:17:01.153 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1     20000  
+2025.08.19 15:17:01.153 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:17:01.153 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  20000[0m[1m [0m 
+2025.08.19 15:17:01.160 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:17:01.167 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.19 15:17:01.327 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.19 15:17:01.332 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.19 15:20:18.293 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:20:18.293 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:20:18.293 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:20:18.293 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:20:18.307 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:20:18.309 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:21:42.029 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:21:42.032 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:21:42.032 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:21:42.032 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:21:42.040 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:21:42.040 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:23:42.144 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:23:42.161 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:23:42.162 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:23:42.163 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:23:42.163 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:23:42.163 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:24:21.725 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:24:21.728 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:24:21.729 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:24:21.732 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:24:21.732 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:24:21.732 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:27:47.037 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:27:47.040 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:27:47.041 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:27:47.043 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:27:47.049 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:27:47.049 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:27:53.318 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:27:53.321 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:27:53.322 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:27:53.325 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:27:53.326 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:27:53.326 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:28:09.163 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:28:09.163 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:28:09.163 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:28:09.163 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:28:09.176 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:28:09.179 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:28:40.811 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:28:40.811 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:28:40.811 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:28:40.811 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:28:40.824 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:28:40.826 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:28:40.875 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:28:50.222 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:28:50.222 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:28:50.222 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:28:50.222 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:28:50.235 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:28:50.236 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:28:50.284 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:28:58.174 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:28:58.177 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:28:58.178 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:28:58.179 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:28:58.186 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:28:58.186 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:28:58.237 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:29:25.764 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:29:25.769 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:29:25.770 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:29:25.772 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:29:25.776 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:29:25.778 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:29:25.827 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:29:42.791 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:29:42.802 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:29:42.803 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:29:42.805 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:29:42.805 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:29:42.805 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:29:42.858 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:30:20.075 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:30:20.077 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:30:20.077 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:30:20.077 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:30:20.088 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:30:20.089 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:30:20.135 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:31:34.550 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:31:34.550 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:31:34.561 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:31:34.566 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:31:34.570 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:31:34.573 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:31:34.627 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:31:34.749 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.118 s]
+2025.08.19 15:31:34.948 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.201 s]
+2025.08.19 15:31:34.948 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.321 s]
+2025.08.19 15:31:34.948 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:31:34.948 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.19 15:31:34.948 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:31:34.948 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         27            0           2     40000  
+2025.08.19 15:31:34.948 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:31:34.948 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      27[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  40000[0m[1m [0m 
+2025.08.19 15:31:34.948 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:31:34.964 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.19 15:31:35.481 | laboneq.controller.devices.device_shfqa       | WARNING SHFQC/QA:dev12296: Output channel 0 range -40.0 is not on the list of allowed ranges: [-30. -25. -20. -15. -10.  -5.   0.   5.  10.]. Nearest allowed range will be used.
+2025.08.19 15:31:35.490 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.19 15:31:35.490 | laboneq.controller.utilities.exception        | CRITICAL SHFQC/QA:dev12296:qa0: Only one envelope waveform per physical channel is possible in spectroscopy mode. Check play commands for the channel.
+2025.08.19 15:35:55.457 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:35:55.457 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:35:55.457 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:35:55.457 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:35:55.457 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:35:55.473 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:35:55.527 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 15:35:55.793 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.265 s]
+2025.08.19 15:35:55.923 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.128 s]
+2025.08.19 15:35:55.925 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.396 s]
+2025.08.19 15:35:55.928 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:35:55.929 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.19 15:35:55.930 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:35:55.931 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         27            0           2     40000  
+2025.08.19 15:35:55.932 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:35:55.932 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      27[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m  40000[0m[1m [0m 
+2025.08.19 15:35:55.933 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.19 15:35:55.942 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.19 15:35:56.092 | laboneq.controller.devices.device_shfqa       | WARNING SHFQC/QA:dev12296: Output channel 0 range -40.0 is not on the list of allowed ranges: [-30. -25. -20. -15. -10.  -5.   0.   5.  10.]. Nearest allowed range will be used.
+2025.08.19 15:35:56.094 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.19 15:35:56.094 | laboneq.controller.utilities.exception        | CRITICAL SHFQC/QA:dev12296:qa0: Only one envelope waveform per physical channel is possible in spectroscopy mode. Check play commands for the channel.
+2025.08.19 15:36:49.265 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 15:36:49.265 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 15:36:49.265 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 15:36:49.277 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 15:36:49.280 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 15:36:49.280 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 15:36:49.329 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.19 17:58:25.556 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.19 17:58:25.556 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.19 17:58:25.556 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.19 17:58:25.556 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.19 17:58:25.571 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.19 17:58:25.573 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.19 17:58:25.622 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+=======
 2025.08.19 18:53:10.343 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /Users/runzhaoguo/Documents/MQST-UCLA/qubit_design/measurements/basic_characterization/laboneq_output/log
 2025.08.19 18:53:10.344 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
 2025.08.19 18:53:10.345 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
@@ -7016,3 +7588,205 @@
 2025.08.19 22:20:52.639 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
 2025.08.19 22:20:53.193 | laboneq.controller.controller                 | INFO   Starting near-time execution...
 2025.08.19 22:20:53.440 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+>>>>>>> origin/RZMac
+2025.08.20 13:05:51.183 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 13:05:51.186 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 13:05:51.189 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 13:05:51.191 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 13:05:51.199 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 13:05:51.201 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 13:06:53.063 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 13:06:53.063 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 13:06:53.063 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 13:06:53.063 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 13:06:53.074 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 13:06:53.076 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 13:07:07.021 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 13:07:07.023 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 13:07:07.025 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 13:07:07.028 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 13:07:07.028 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 13:07:07.028 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 14:43:59.902 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 14:43:59.914 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 14:43:59.916 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 14:43:59.921 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 14:43:59.925 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 14:43:59.927 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 15:40:42.071 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 15:40:42.075 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 15:40:42.077 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 15:40:42.081 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 15:40:42.087 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 15:40:42.090 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 15:42:20.656 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 15:42:20.659 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 15:42:20.662 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 15:42:20.662 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 15:42:20.671 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 15:42:20.674 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 15:44:21.930 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 15:44:21.940 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 15:44:21.941 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 15:44:21.944 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 15:44:21.948 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 15:44:21.951 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 15:44:44.047 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 15:44:44.047 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 15:44:44.047 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 15:44:44.047 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 15:44:44.058 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 15:44:44.058 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 15:44:54.676 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 15:44:54.681 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 15:44:54.681 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 15:44:54.683 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 15:44:54.688 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 15:44:54.690 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 15:46:38.992 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 15:46:38.995 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 15:46:38.996 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 15:46:38.999 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 15:46:39.003 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 15:46:39.005 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 15:49:14.754 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 15:49:14.754 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 15:49:14.765 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 15:49:14.768 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 15:49:14.771 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 15:49:14.773 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 15:50:13.934 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 15:50:13.938 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 15:50:13.938 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 15:50:13.941 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 15:50:13.941 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 15:50:13.947 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 15:50:13.949 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.20 15:50:14.012 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.060 s]
+2025.08.20 15:50:14.115 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.101 s]
+2025.08.20 15:50:14.117 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.163 s]
+2025.08.20 15:50:14.125 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 15:50:14.126 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.20 15:50:14.126 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 15:50:14.126 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1       416  
+2025.08.20 15:50:14.126 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 15:50:14.126 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m    416[0m[1m [0m 
+2025.08.20 15:50:14.130 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 15:50:14.183 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.20 15:50:14.191 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.20 15:50:14.198 | laboneq.controller.controller                 | INFO   Estimated RT execution time: 10.44 s.
+2025.08.20 15:50:14.198 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.20 15:50:35.573 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 15:50:35.573 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 15:50:35.578 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 15:50:35.580 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 15:50:35.584 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 15:50:35.586 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 15:50:35.588 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.20 15:50:35.646 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.059 s]
+2025.08.20 15:50:35.830 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.185 s]
+2025.08.20 15:50:35.830 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.247 s]
+2025.08.20 15:50:35.830 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 15:50:35.830 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.20 15:50:35.845 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 15:50:35.846 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1       416  
+2025.08.20 15:50:35.846 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 15:50:35.847 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m    416[0m[1m [0m 
+2025.08.20 15:50:35.847 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 15:50:35.854 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.20 15:50:35.854 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.20 15:50:35.865 | laboneq.controller.controller                 | INFO   Estimated RT execution time: 10.44 s.
+2025.08.20 15:50:35.865 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.20 15:57:59.621 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 15:57:59.624 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 15:57:59.625 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 15:57:59.629 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 15:57:59.633 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 15:57:59.635 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 15:57:59.639 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.20 15:57:59.689 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.056 s]
+2025.08.20 15:57:59.756 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.072 s]
+2025.08.20 15:57:59.771 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.130 s]
+2025.08.20 15:57:59.775 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 15:57:59.776 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.20 15:57:59.777 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 15:57:59.777 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1       416  
+2025.08.20 15:57:59.778 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 15:57:59.779 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m    416[0m[1m [0m 
+2025.08.20 15:57:59.779 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 15:57:59.785 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.20 15:57:59.792 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.20 15:57:59.796 | laboneq.controller.controller                 | INFO   Estimated RT execution time: 10.44 s.
+2025.08.20 15:57:59.798 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.20 16:06:47.500 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 16:06:47.503 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 16:06:47.506 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 16:06:47.509 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 16:06:47.514 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 16:06:47.515 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 16:07:08.221 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 16:07:08.221 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 16:07:08.221 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 16:07:08.235 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 16:07:08.238 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 16:07:08.240 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 16:07:08.241 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.20 16:07:08.303 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.057 s]
+2025.08.20 16:07:08.380 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.075 s]
+2025.08.20 16:07:08.381 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.135 s]
+2025.08.20 16:07:08.389 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 16:07:08.389 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.20 16:07:08.389 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 16:07:08.389 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1      4000  
+2025.08.20 16:07:08.389 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 16:07:08.394 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m   4000[0m[1m [0m 
+2025.08.20 16:07:08.395 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 16:07:08.404 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.20 16:07:08.416 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.20 16:07:08.423 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.20 16:09:14.100 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 16:09:14.103 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 16:09:14.104 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 16:09:14.107 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 16:09:14.111 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 16:09:14.112 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 16:09:14.112 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.20 16:09:14.193 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.080 s]
+2025.08.20 16:09:14.286 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.087 s]
+2025.08.20 16:09:14.288 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.170 s]
+2025.08.20 16:09:14.291 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 16:09:14.291 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.20 16:09:14.292 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 16:09:14.293 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1      4000  
+2025.08.20 16:09:14.294 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 16:09:14.295 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m   4000[0m[1m [0m 
+2025.08.20 16:09:14.295 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 16:09:14.295 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.20 16:09:14.309 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.20 16:09:14.314 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.20 16:10:02.512 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 16:10:02.524 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 16:10:02.525 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 16:10:02.528 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 16:10:02.532 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 16:10:02.534 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 16:22:36.949 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\24716\Documents\code\python\qubit_design\measurements\basic_characterization\laboneq_output\log
+2025.08.20 16:22:36.962 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.57.0
+2025.08.20 16:22:36.965 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.20 16:22:36.970 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.07.0.507 at 127.0.0.1:8004
+2025.08.20 16:22:36.972 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.20 16:22:36.977 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.20 16:22:36.981 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.20 16:22:37.067 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.083 s]
+2025.08.20 16:22:37.153 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.086 s]
+2025.08.20 16:22:37.154 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.171 s]
+2025.08.20 16:22:37.161 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 16:22:37.162 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.20 16:22:37.163 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 16:22:37.163 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         21            0           1      4000  
+2025.08.20 16:22:37.164 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 16:22:37.165 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      21[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m   4000[0m[1m [0m 
+2025.08.20 16:22:37.166 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.20 16:22:37.176 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.20 16:22:37.185 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.20 16:22:37.185 | laboneq.controller.controller                 | INFO   Finished near-time execution.
