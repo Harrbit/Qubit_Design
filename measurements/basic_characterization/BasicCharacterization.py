@@ -62,7 +62,6 @@ class PunchOut:
         #-----------------------------Below is the SIGNAL MAP------------------------------------#
         self.map_q0 = {}
         self.map_q0['measure'] = self.device_setup.logical_signal_groups['q0'].logical_signals['measure_line']
-        self.map_q0['measure_1'] = self.device_setup.logical_signal_groups['q0'].logical_signals['measure_line']
         self.map_q0['acquire'] = self.device_setup.logical_signal_groups['q0'].logical_signals['acquire_line']
         #-----------------------------SIGNAL MAP ends here---------------------------------------#
 
@@ -82,45 +81,48 @@ class PunchOut:
                                                               stop=0.7,
                                                               count=101),
                         ):
+        
+        print(acq_amp_sweep)
+
         exp = Experiment(
             uid = exp_id,
             signals = [
                 ExperimentSignal("measure"),
-                ExperimentSignal("measure_1"),
                 ExperimentSignal("acquire"),
             ],
         )
-        with exp.acquire_loop_rt(
-            uid='freq_shots',
-            count=pow(10, average_exponent),
-            acquisition_type=AcquisitionType.SPECTROSCOPY,
-        ):
-            with exp.sweep(uid='acq_freq_sweep', parameter=acq_freq_sweep):
-                with exp.section(uid="spectroscopy"):
-                    exp.play(signal='measure', pulse=self.readout_pulse)
-                    exp.acquire(signal='acquire', handle='res_spec', length=self.integration_length),  # incase people are wondering, yes, 'res_spec' stand for 'resonator spectroscopy'.
+        with exp.sweep(uid='acq_amp_sweep', parameter=acq_amp_sweep):  # It appears that the plot_simulation function does not plot this sweep, Will need to do actual experiment to see if this works.
+            with exp.acquire_loop_rt(
+                uid='freq_shots',
+                count=pow(2, average_exponent),
+                acquisition_type=AcquisitionType.SPECTROSCOPY,
+            ):
+                with exp.sweep(uid='acq_freq_sweep', parameter=acq_freq_sweep):
+                    with exp.section(uid="spectroscopy"):
+                        exp.play(signal='measure', pulse=self.readout_pulse)  # This is the readout pulse, amplitude is set to 0.1.
+                        exp.acquire(signal='acquire', handle='res_spec', length=self.integration_length),  # incase people are wondering, yes, 'res_spec' stand for 'resonator spectroscopy'.
         return exp
     
 
     def calibrate_experiment(self):
         exp_calibration = Calibration()
+        # exp_calibration["measure"] = SignalCalibration(
+        #     oscillator = Oscillator(uid = "qa_osc",  # let's just say here 'qa' stands for quantum analyzer
+        #                             frequency = self.acq_freq_sweep,
+        #                             modulation_type=ModulationType.HARDWARE),
+        #     local_oscillator = Oscillator(uid="qa_lo",
+        #                                   frequency=self.acq_lo_freq),
+        #     range=-30,
+        #     amplitude=0.1,
+        # )
         exp_calibration["measure"] = SignalCalibration(
-            oscillator = Oscillator(uid = "qa_osc",  # let's just say here 'qa' stands for quantum analyzer
-                                    frequency = self.acq_freq_sweep,
-                                    modulation_type=ModulationType.HARDWARE),
-            local_oscillator = Oscillator(uid="qa_lo",
-                                          frequency=self.acq_lo_freq),
-            range=-30,
-            amplitude=0.1,
-        )
-        exp_calibration["measure_1"] = SignalCalibration(
-            oscillator = Oscillator(uid = "qa_osc_1",  # let's just say here 'qa' stands for quantum analyzer
-                                    frequency = self.acq_freq_sweep,
-                                    modulation_type=ModulationType.HARDWARE),
-            local_oscillator = Oscillator(uid="qa_lo_1",
-                                          frequency=self.acq_lo_freq),
-            range=-30,
-            amplitude=0.7,
+        oscillator = Oscillator(uid = "qa_osc",  # let's just say here 'qa' stands for quantum analyzer
+                                frequency = 100e6,
+                                modulation_type=ModulationType.HARDWARE),
+        local_oscillator = Oscillator(uid="qa_lo",
+                                        frequency=7.0e9),
+        range=-30,
+        amplitude=0.1,
         )
         exp_calibration["acquire"] = SignalCalibration(
             range = -40,
@@ -131,7 +133,7 @@ class PunchOut:
 
     def run_experiment(self):
         self.exp_instance = self.setup_experiment(exp_id='punch_out',
-                                                  average_exponent=2,
+                                                  average_exponent=0,
                                                   acq_freq_sweep=self.acq_freq_sweep,
                                                   acq_amp_sweep=self.acq_amp_sweep,)
         self.exp_instance.set_signal_map(self.map_q0)
