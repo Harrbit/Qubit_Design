@@ -39,7 +39,7 @@ class ResSpec:
         connections:
           device_shfqc:
             - iq_signal: q0/drive_line
-              ports: SGCHANNELS/0/OUTPUT
+              ports: SGCHANNELS/1/OUTPUT
             - iq_signal: q0/measure_line
               ports: [QACHANNELS/0/OUTPUT]
             - acquire_signal: q0/acquire_line
