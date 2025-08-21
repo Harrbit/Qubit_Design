@@ -1,13 +1,17 @@
-# ANSYS Licensing Information
+# UCLA找室友
 
-## Network Configuration
+## 个人信息：
 
-- **Connection Type**: Wireless (WLAN)
-- **IPv4 Address**: `172.28.188.28`
-- **Subnet Mask**: `255.255.252.0`
-- **Default Gateway**: `172.28.188.1`
+男，UCLA硕士，正常作息，卫生习惯好，不抽烟，没有宠物。
 
-## Host Details
+## 公寓信息：
 
-- **Computer Name**: RZPC
-- **MAC Address**: 9C-FE-E8-F7-4E-EE
+1900 Sawtelle Ave, 2b2b.
+
+## 简单描述：
+
+20分钟big blue bus 17路直达UCLA； 自行车15分钟，亲测bikeable.
+
+在UCLA上了一年课以后发现去的最多的就是sawtelle，所以决定搬过去。个人认为sawtelle烟火气浓，东亚文化存在感强，很适合中国留子住。
+
+有意向欢迎私信！
