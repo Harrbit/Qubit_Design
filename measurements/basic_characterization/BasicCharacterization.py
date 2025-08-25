@@ -1,27 +1,30 @@
 """
 BasicCharacterization.py
 
-A collection of classes for basic qubit and resonator characterization experiments using Zurich Instruments LabOne Q framework.
+A set of classes for performing basic qubit and resonator characterization experiments using the Zurich Instruments LabOne Q framework.
 
-Author: Runzhao Guo (郭润钊)
-Copyright (c) 2025 Runzhao Guo. All rights reserved.
-License: Personal and educational use only.
-
-This module provides:
+Experiments included:
 - Resonator spectroscopy (ResSpec)
 - Amplitude sweep spectroscopy (PunchOut)
 - Qubit spectroscopy (QuSpec)
 - Two-tone spectroscopy (TwoToneSpec)
+- Time-domain Rabi (TimeRabi)
+- Amplitude-domain Rabi (AmplitudeRabi)
+- T1 relaxation (T1)
+- Ramsey interference (Ramsey)
 
 Dependencies:
     - laboneq
     - numpy
     - matplotlib
 
-For documentation and examples for laboneq, see:
+Refer to LabOne Q documentation for details regarding LabOne Q framework:
     https://docs.zhinst.com/labone_q_user_manual/
     https://github.com/zhinst/laboneq
 
+Author: Runzhao Guo (郭润钊)
+Copyright (c) 2025 Runzhao Guo. All rights reserved.
+License: For personal and educational use only.
 """
 
 
@@ -1176,3 +1179,5 @@ class Ramsey:
         self.freq_exp = self.run_exp.get_axis('res_spec')[0]
 
         return self.data_exp
+    
+
