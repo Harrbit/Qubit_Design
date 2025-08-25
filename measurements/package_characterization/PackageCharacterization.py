@@ -5,7 +5,7 @@ import laboneq
 
 
 
-class CavityCharacterization:
+class CoherenceSpectroscopy:
     def __init__ (self):
         print(laboneq.__version__)
 
@@ -27,7 +27,7 @@ class CavityCharacterization:
         self.delay_sweep_stop = 10e-6
         
         self.delay_sweep = LinearSweepParameter(uid="acquisition_frequency_sweep",
-                                                      start=self.delay_sweep_start, 
+                                                      start=self.delay_sweep_start,
                                                       stop=self.delay_sweep_stop, 
                                                       count=self.delay_sweep_cnt,)
         #-------------------------Experiment-specific setup ends here--------------------------#
@@ -102,7 +102,7 @@ class CavityCharacterization:
             with exp.sweep(uid='acq_freq_sweep', parameter=delay_sweep):
 
                 with exp.section(uid='initial_excitation'):
-                    exp.play(signal='drive', pulse=self.x90_pulse)
+                    exp.play(signal='cavity', pulse=self.x90_pulse)
 
                 with exp.section(uid='qubit_excitation'):
                     exp.play(signal='drive', pulse=self.x90_pulse)  # This is the qubit drive pulse.
@@ -133,6 +133,15 @@ class CavityCharacterization:
                                           frequency=self.acq_lo_freq),
             range=-15,  # the ultimate goal is to get -90 dB at to sample, current attenuaion is 70 dB(Aug 24, 2025 cooldown), so we need -20 dB at the output of the AWG.
             amplitude=0.5623,  # HOWEVER, 1.0 amplitude causes overload at output, so we use 0.5623 instead, which is -5 dB, which explains why we have -15 dB here instead of -20 dB.
+        )
+
+        exp_calibration['cavity'] = SignalCalibration(
+            oscillator = Oscillator(uid='ch2_osc',
+                                    frequency=self.acq_res_freq,
+                                    modulation_type=ModulationType.HARDWARE),
+            local_oscillator=Oscillator(uid='ch2_lo', frequency=self.acq_lo_freq),
+            range=-30,
+            amplitude=1.0,
         )
 
         exp_calibration["drive"] = SignalCalibration(
